@@ -113,7 +113,7 @@ if __name__ =="__main__":
             max_score = current_score
             print("\rCurrent_best_score: {} \nCurrent_best_action:{}\n".format(max_score, max_send_action))
         print('\rSearch_episode:{}    Score:{} \naction:{}\n'.format(episode, current_score, send_action), end=" ")
-
+ 
         if (episode+1) % args.max_search_step == 0:
     # max_score = 615
     # max_action = np.array([1.0457387, - 0.02182625,  0.91288334,  1.2316165, - 1.996634, 1.6281404, - 1.9038373, - 0.42540294,  3.2475345, - 0.5344968,   0.06618121,  2.1394134, 1.0309268, - 2.3849967,   0.05007295,  0.9351754,   0.8130758,   0.2168962])
