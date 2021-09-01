@@ -38,12 +38,12 @@ from itertools import count
 from collections import namedtuple, deque
 from tensorboardX import SummaryWriter
 from multiprocessing import Process, Pipe, Queue
-from Wargame_land2020.Algorithm.Argumens import arguments
-from Wargame_land2020.Algorithm.ppo.PPO_Agent import Agent
-from Wargame_land2020.Algorithm.ppo.PPO_Model import Network
-from Wargame_land2020.Algorithm.ppo.env_shell import ENV
-from Wargame_land2020.Algorithm.ppo.PPO_Model import Actor, Critic
-from Wargame_land2020.GeneralEnv.my_import import my_import
+from ..Algorithm.Argumens import arguments
+from ..Algorithm.ppo.PPO_Agent import Agent
+from ..Algorithm.ppo.PPO_Model import Network
+from ..Algorithm.ppo.env_shell import ENV
+from ..Algorithm.ppo.PPO_Model import Actor, Critic
+from ..GeneralEnv.my_import import my_import
 
 def Average(array):
     avg = 0.0
