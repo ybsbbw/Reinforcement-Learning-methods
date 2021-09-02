@@ -37,8 +37,7 @@ import numpy as np
 import os
 import random
 from tensorboardX import SummaryWriter
-from ppo_continous.PPO_Agent import Agent as PPO_Agent
-from ddpg.DDPG_Agent import Agent as DDPG_Agent
+from search_Agent import Agent as search_Agent
 from main_TZ import EachEpoch
 from itertools import count
 import matplotlib.pyplot as plt
@@ -82,7 +81,7 @@ if __name__ =="__main__":
     # p_Agent = PPO_Agent(args.state_dim, args.action_dim, device, args.buffer_size, args.batch_size, args.horizon_steps,
     #             args.update_steps, args.lamda, args.gamma, args.lr, args.tau, args.run_type, args.clip,
     #             args.max_grad_norm, args.entropy_factor, args.delta_type, args.infinite, args.norm, args.seed)
-    d_Agent = DDPG_Agent(args.state_dim, args.action_dim, device, args.buffer_size, args.batch_size, args.lr, args.gamma, args.tau)
+    d_Agent = search_Agent(args.state_dim, args.action_dim, device, args.buffer_size, args.batch_size, args.lr, args.gamma, args.tau)
 
     ee = EachEpoch(False)
 
