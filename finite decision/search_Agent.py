@@ -5,8 +5,8 @@ import copy
 from collections import namedtuple, deque
 import torch.nn.functional as F
 import torch.optim as optim
-from ddpg.DDPG_Model import Actor
-from ddpg.DDPG_Model import Critic
+from search_Model import Actor
+from search_Model import Critic
 
 class Agent():
     def __init__(self, state_typesize, action_typesize, device, buffer_size, batch_size,
