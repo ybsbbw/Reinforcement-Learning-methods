@@ -1,5 +1,5 @@
 # Reinforcement-Learning-methods
-Some reinforcement learning methods and projects in pytorch
+Some reinforcement learning methods and projects in pytorch by Wensheng Zhang
 
 Algorithms Implemented（main/agent/model/buffer/args）:
 
